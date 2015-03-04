@@ -18,7 +18,11 @@ public class GameManager : MonoBehaviour {
 	public Text scorePointText, correctPointText, accuratePointText;
 	public int combo = 0;
 	public int score = 0;
+	private int point = 10;
 	private bool gameStart = false;
+
+	public AudioClip collectSound;
+	public AudioClip inCollectSound;
 
 	void Awake() {
 		gameContents.SetActive(false);
@@ -27,7 +31,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Start () {
-
+		AudioSource[] audioSources = GetComponents<AudioSource>();
 	}
 
 	void Update () {
@@ -54,6 +58,21 @@ public class GameManager : MonoBehaviour {
 		}
 		timerText.text = time.ToString("f1");
 		comboText.text = combo.ToString() + " コンボ";
+	}
+
+	public void Collect() {
+		correctNum++;
+		combo++;
+		score += point * combo;
+		comboText.gameObject.SetActive(true);
+		GetComponent<AudioSource>().PlayOneShot(collectSound);
+	}
+
+	public void InCollect() {
+		inCorrectNum++;
+		combo = 0;
+		comboText.gameObject.SetActive (false);
+		GetComponent<AudioSource>().PlayOneShot(inCollectSound);
 	}
 
 	int CalcAccurate() {

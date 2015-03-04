@@ -8,15 +8,14 @@ public class ButtonSelect : MonoBehaviour {
 	private Color pressedColor;
 	private int buttonNumber = 9;
 	private Button collectButton;
-	GameManager gameManager;
-	private int point = 10;
+	GameObject gameManager;
 
 	void Awake() {
 		Next();
 	}
 
 	void Start () {
-		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+		gameManager = GameObject.Find("GameManager");
 	}
 
 	void Update () {
@@ -153,15 +152,10 @@ public class ButtonSelect : MonoBehaviour {
 
 	void Collect() {
 		Next();
-		gameManager.correctNum++;
-		gameManager.combo++;
-		gameManager.score += point * gameManager.combo;
-		gameManager.comboText.gameObject.SetActive(true);
+		gameManager.SendMessage ("Collect");
 	}
 
 	void InCollect() {
-		gameManager.inCorrectNum++;
-		gameManager.combo = 0;
-		gameManager.comboText.gameObject.SetActive(false);
+		gameManager.SendMessage ("InCollect");
 	}
 }
