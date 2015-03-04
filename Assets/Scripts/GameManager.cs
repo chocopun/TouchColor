@@ -4,7 +4,7 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 	public Text timerText;
-	public float time = 5.0f;
+	public float time = 15.0f;
 	public GameObject gameContents;
 	public GameObject resultContents;
 	public Text countdownText;
