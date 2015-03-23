@@ -46,11 +46,29 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\JSON\JSONObject.cs" />
+     <Compile Include="Assets\JSON\JSONTemplates.cs" />
+     <Compile Include="Assets\JSON\LitJson\IJsonWrapper.cs" />
+     <Compile Include="Assets\JSON\LitJson\JsonData.cs" />
+     <Compile Include="Assets\JSON\LitJson\JsonException.cs" />
+     <Compile Include="Assets\JSON\LitJson\JsonMapper.cs" />
+     <Compile Include="Assets\JSON\LitJson\JsonReader.cs" />
+     <Compile Include="Assets\JSON\LitJson\JsonWriter.cs" />
+     <Compile Include="Assets\JSON\LitJson\Lexer.cs" />
+     <Compile Include="Assets\JSON\LitJson\ParserToken.cs" />
+     <Compile Include="Assets\JSON\VectorTemplates.cs" />
      <Compile Include="Assets\Scripts\ButtonSelect.cs" />
+     <Compile Include="Assets\Scripts\End.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\PlayButton.cs" />
+     <Compile Include="Assets\Scripts\InsertDB.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\Profile.cs" />
+     <Compile Include="Assets\Scripts\Ranking.cs" />
+     <Compile Include="Assets\Scripts\Ready.cs" />
+     <Compile Include="Assets\Scripts\Result.cs" />
      <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
-     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <Compile Include="Assets\Scripts\Wrapper.cs" />
+     <None Include="Assets\JSON\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

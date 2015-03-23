@@ -2,15 +2,18 @@
 using System.Collections;
 
 public class SceneSwitcher : MonoBehaviour {
+	private string lastScene;
 
-	// Use this for initialization
 	void Start () {
+		lastScene = PlayerPrefs.GetString("lastScene");
+	}
+
+	void Update () {
 
 	}
 
-	// Update is called once per frame
-	void Update () {
-
+	public void SwitchBack(){
+		Application.LoadLevel(lastScene);
 	}
 
 	public void SwitchToMain(){
@@ -19,5 +22,21 @@ public class SceneSwitcher : MonoBehaviour {
 
 	public void SwitchToMenu() {
 		Application.LoadLevel("Menu");
+	}
+
+	public void SwitchToRanking() {
+		Application.LoadLevel("Ranking");
+	}
+
+	public void SwitchToProfile() {
+		Application.LoadLevel("Profile");
+	}
+
+	public void SwitchReady(){
+		Application.LoadLevel("Ready");
+	}
+
+	public void SwitchResult(){
+		Application.LoadLevel("Result");
 	}
 }

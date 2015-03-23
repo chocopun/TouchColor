@@ -5,6 +5,8 @@ Project("{6A7EC509-B993-7831-E4EB-FEB121C7526C}") = "ColorTouch", "Assembly-CSha
 EndProject
 Project("{6A7EC509-B993-7831-E4EB-FEB121C7526C}") = "ColorTouch", "Assembly-CSharp.csproj", "{E5598CF5-E0D9-A5ED-1240-6B68ED09BB32}"
 EndProject
+Project("{6A7EC509-B993-7831-E4EB-FEB121C7526C}") = "ColorTouch", "Assembly-CSharp-Editor.csproj", "{634785B2-57FE-E8E2-9F28-52AEF4E33EFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{E5598CF5-E0D9-A5ED-1240-6B68ED09BB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5598CF5-E0D9-A5ED-1240-6B68ED09BB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5598CF5-E0D9-A5ED-1240-6B68ED09BB32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634785B2-57FE-E8E2-9F28-52AEF4E33EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634785B2-57FE-E8E2-9F28-52AEF4E33EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634785B2-57FE-E8E2-9F28-52AEF4E33EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634785B2-57FE-E8E2-9F28-52AEF4E33EFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-											GlobalSection(MonoDevelopProperties) = preSolution
+																																																													GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
